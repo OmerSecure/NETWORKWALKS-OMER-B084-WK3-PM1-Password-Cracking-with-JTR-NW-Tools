@@ -132,21 +132,25 @@ john --show hash1.txt
 
 **Objective:** Recover the password of `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf` using NetworkWalks online browser tools.
 
-**Steps Performed:**
-1.  Opened the **NetworkWalks Hash Calculator** tool in a web browser.
-2.  Uploaded the locked PDF file to the Hash Calculator to extract its hash. The tool generated a crackable hash from the password-protected PDF.
-3.  Copied the extracted hash and pasted it into the **NetworkWalks Password Cracker** tool.
-4.  Initiated the cracking process. The tool ran a dictionary attack against the hash.
-5.  Successfully cracked the password: **`password1`**.
+**Steps Performed and Proof of Work:**
+
+1.  **Opened** the [NetworkWalks Hash Calculator](https://networkwalks.com/hash-calculator/) tool in a web browser.
+2.  **Uploaded the locked PDF file** to the Hash Calculator to extract its hash. The tool generated a crackable hash from the password-protected PDF.
+
+<img src="screenshots/W3-PM2/1.Hash-Calculator.png"  alt="Hash Calculator">
+
+3.  **Copied the extracted hash and pasted it into** [the NetworkWalks Password Cracker](https://networkwalks.com/password-cracker) tool.
+4.  **Initiated the cracking process**. The tool ran a dictionary attack against the hash.
+5.  **Successfully cracked the password**: `password1`.
+
+<img src="screenshots/W3-PM2/3.CrackHash-MyLockedPDF1.png"  alt="Password Cracker Success">
+
 
 **Finding:** The same weak password was recovered using browser-based tools, reinforcing the lesson that password strength is the primary defense, regardless of the tool used.
 
-**Proof of Work:**
-- [Hash Calculator](W3-PM2-NW-Tools/screenshots/1-hash-calculator.png)
-- [Password Cracker Success](W3-PM2-NW-Tools/screenshots/2-password-cracker.png)
 
 ---
-
+<!-- 
 ### 4.3 Optional Module 1: AI-Assisted JTR Lab (HexStrike MCP + Claude)
 
 **Objective:** Set up HexStrike MCP with Claude Desktop and use AI to automate password cracking with JTR.
@@ -183,31 +187,35 @@ john --show hash1.txt
 - [Findings Summary](Optional-WK3/Mediroza-Hospital-Portal/screenshots/2-findings.png)
 
 ---
+-->
 
 ## 5. Summary of Results
 
 | Module | Toolchain | Target File | Recovered Password | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **W3-PM1** | John the Ripper + Johnny (Local) | My Locked PDF1.pdf | `password1` | ✅ Cracked |
-| **W3-PM2** | NetworkWalks Hash Calculator + Password Cracker (Web) | My Locked PDF1 (NW Tools).pdf | `password1` | ✅ Cracked |
+| **W3-PM1** | John the Ripper + Johnny (Local) | My Locked PDF1.pdf<br>My Locked PDF2.pdf<br>My Locked PDF3.pdf | `good-luck`<br>`password1`<br>`password1` | ✅ Cracked |
+| **W3-PM2** | NetworkWalks Hash Calculator + Password Cracker (Web) | My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf | `password1` | ✅ Cracked |
+
+<!-- 
 | **W3-OPTIONAL1** | HexStrike MCP + Claude Desktop | My Locked PDF2.pdf | (AI-Assisted) | ✅ Completed |
 | **W3-OPTIONAL2** | Hydra / Python / Tor | Mediroza Hospital Portal | (Target-specific) | ✅ Completed |
+-->
 
 ---
 
 ## 6. Key Learnings
 
-1.  **Password Strength is Critical:** Weak, predictable passwords (`password1`) are cracked almost instantly. Password length, uniqueness, and unpredictability are far more important defensive factors than the mere presence of a password[reference:24].
-2.  **Offline Cracking is Powerful:** Once a hash is extracted from a file, an attacker does not need repeated access to the original file. Protecting hashes and encrypted backups matters as much as protecting the passwords themselves[reference:25].
+1.  **Password Strength is Critical:** Weak, predictable passwords (`password1`) are cracked almost instantly. Password length, uniqueness, and unpredictability are far more important defensive factors than the mere presence of a password.
+2.  **Offline Cracking is Powerful:** Once a hash is extracted from a file, an attacker does not need repeated access to the original file. Protecting hashes and encrypted backups matters as much as protecting the passwords themselves.
 3.  **Multiple Attack Vectors:** Password cracking can be performed both locally (JTR + Johnny) and via browser-based tools (NetworkWalks), making it accessible to a wide range of skill levels.
-4.  **Validation is Essential:** A tool reporting a "successful crack" should always be validated by actually opening the original protected file[reference:26].
+4.  **Validation is Essential:** A tool reporting a "successful crack" should always be validated by actually opening the original protected file.
 5.  **AI is Changing Security:** AI-powered MCP servers like HexStrike enable automation of complex security workflows, making offensive security tasks faster and more accessible.
 
 ---
 
 ## 7. Defensive Recommendations
 
-1.  **Use Strong Passwords:** Adopt long, unique, and unpredictable passwords — avoid keyboard patterns and common words[reference:27].
+1.  **Use Strong Passwords:** Adopt long, unique, and unpredictable passwords — avoid keyboard patterns and common words.
 2.  **Use a Password Manager:** Generate and securely store passwords using a dedicated password manager.
 3.  **Enable Multi-Factor Authentication (MFA):** Add an extra layer of security beyond passwords.
 4.  **Protect Hashes:** Treat password hashes as sensitive data. Use strong encryption and access controls for backups and credential stores.
@@ -218,10 +226,10 @@ john --show hash1.txt
 
 ## 8. Conclusion
 
-During Week 3 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering password cracking and recovery for encrypted PDF files. I used both local tools (John the Ripper + Johnny) and browser-based tools (NetworkWalks Hash Calculator & Password Cracker) to successfully recover passwords from protected files. Additionally, I explored advanced AI-assisted automation with HexStrike MCP and Claude Desktop, and performed web application penetration testing against the Mediroza Hospital portal. These exercises reinforced the importance of strong, unique passwords and demonstrated how security professionals can use these techniques to test and improve organizational security posture. All activities were completed within the authorized scope of the assigned educational lab.
+During **`Week 3`** of my **Cybersecurity & Ethical Hacking internship**, I completed practical activities covering password cracking and recovery for encrypted PDF files. I used both local tools (John the Ripper + Johnny) and browser-based tools (NetworkWalks Hash Calculator & Password Cracker) to successfully recover passwords from protected files. Additionally, I explored advanced AI-assisted automation with HexStrike MCP and Claude Desktop, and performed web application penetration testing against the Mediroza Hospital portal. These exercises reinforced the importance of strong, unique passwords and demonstrated how security professionals can use these techniques to test and improve organizational security posture. All activities were completed within the authorized scope of the assigned educational lab.
 
 ---
-
+<!-- 
 ## 9. Evidences Collected
 
 ### Screenshots
@@ -238,3 +246,5 @@ During Week 3 of my Cybersecurity & Ethical Hacking internship, I completed prac
 **Optional Modules**
 - `screenshots/1-hexstrike-setup.png`
 - `screenshots/2-ai-cracking.png`
+-->
+
