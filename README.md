@@ -62,11 +62,13 @@ This report documents the Week 3 practical exercises focused on **password crack
 > Note: If you are using Kali Linux then you can open JTR (John The Ripper) directly because it comes pre-installed in Kali Linux
 
 <br>
+
 3.  **Extracted the hash** from `My Locked PDF1.pdf` and Save it into a text file named `hash1.txt` for JTR to process.
 
 **Proof of Work:**
+
 3.1 using an [online PDF hash extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php).
-- [Hash Calculator]()
+
 <img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDF1.png" width="600" alt="Extract the Hash">
 
 3.2 using Kali-Linux Terminal:
@@ -77,11 +79,13 @@ pdf2john "My Locked PDF1.pdf" > hash1.txt
 pdf2john "My Locked PDF2.pdf" > hash2.txt
 pdf2john "My Locked PDF3.pdf" > hash3.txt
 ```
+
 <img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDFs.png" width="600" alt="Extract the Hashes">
 
 > Note: If your hash contains extra characters like b' in the start then make sure to remove those when saving in txt file (hash value should be in the format shown in above screenshot i.e. starting with `$pdf$`...).
 
 <br>
+
 4. **Start the attack**
 
 ```bash
@@ -96,15 +100,18 @@ john --show hash1.txt
 ```
 
 **Proof of Work:**
+
 <img src="screenshots/W3-PM1/2.CrackHash-MyLockedPDFs.png" width="600" alt="Passwords Cracked">
 
 <br>
+
 5. **Successfully recovered the passwords for:**
    - My Locked PDF1.pdf: `good-luck`
    - My Locked PDF2.pdf: `password1`
    - My Locked PDF3.pdf: `1qaz2wsx`
 
 <br>
+
 6.  Used the recovered password to open the protected PDF and verified access. The PDF contained a flag confirming successful cracking.
 
 **Proof of Work:**
