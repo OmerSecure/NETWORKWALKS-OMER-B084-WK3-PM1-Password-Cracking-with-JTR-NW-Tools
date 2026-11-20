@@ -139,12 +139,21 @@ john --show hash1.txt
 
 <img src="screenshots/W3-PM2/1.Hash-Calculator.png"  alt="Hash Calculator">
 
+<br>
+
 3.  **Copied the extracted hash and pasted it into** [the NetworkWalks Password Cracker](https://networkwalks.com/password-cracker) tool.
 4.  **Initiated the cracking process**. The tool ran a dictionary attack against the hash.
 5.  **Successfully cracked the password**: `password1`.
 
-<img src="screenshots/W3-PM2/3.CrackHash-MyLockedPDF1.png"  alt="Password Cracker Success">
+<img src="screenshots/W3-PM2/2.CrackHash-MyLockedPDF1(ForNWToolsLabWK3-PM2).png"  alt="Password Cracker Success">
 
+<br>
+
+6.  **Used the recovered password to open the protected PDF and verified access**. The PDF contained a flag confirming successful cracking.
+
+**Proof of Work:**
+
+* **Flag for My Locked PDF1 (For NW Tools Lab WK3-PM2).pdf** <img src="screenshots/W3-PM2/3.Flag-MyLockedPDF1(ForNWToolsLabWK3-PM2).png"  alt="Flag for My Locked PDF1 (For NW Tools Lab WK3-PM2)">
 
 **Finding:** The same weak password was recovered using browser-based tools, reinforcing the lesson that password strength is the primary defense, regardless of the tool used.
 
