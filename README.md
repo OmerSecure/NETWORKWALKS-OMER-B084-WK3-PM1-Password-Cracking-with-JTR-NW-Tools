@@ -69,7 +69,7 @@ This report documents the Week 3 practical exercises focused on **password crack
 
 3.1 using an [online PDF hash extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php).
 
-<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDF1.png" width="600" alt="Extract the Hash">
+<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDF1.png"  alt="Extract the Hash">
 
 3.2 using Kali-Linux Terminal:
 ```bash
@@ -80,7 +80,7 @@ pdf2john "My Locked PDF2.pdf" > hash2.txt
 pdf2john "My Locked PDF3.pdf" > hash3.txt
 ```
 
-<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDFs.png" width="600" alt="Extract the Hashes">
+<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDFs.png"  alt="Extract the Hashes">
 
 > Note: If your hash contains extra characters like b' in the start then make sure to remove those when saving in txt file (hash value should be in the format shown in above screenshot i.e. starting with `$pdf$`...).
 
@@ -101,7 +101,7 @@ john --show hash1.txt
 
 **Proof of Work:**
 
-<img src="screenshots/W3-PM1/2.CrackHash-MyLockedPDFs.png" width="600" alt="Passwords Cracked">
+<img src="screenshots/W3-PM1/2.CrackHash-MyLockedPDFs.png"  alt="Passwords Cracked">
 
 <br>
 
@@ -116,11 +116,11 @@ john --show hash1.txt
 
 **Proof of Work:**
 
-* **Flag for MyLockedPDF1.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF1.png" width="600" alt="Flag for MyLockedPDF1.pdf">
+* **Flag for MyLockedPDF1.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF1.png"  alt="Flag for MyLockedPDF1.pdf">
 
-* **Flag for MyLockedPDF2.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF2.png" width="600" alt="Flag for MyLockedPDF2.pdf">
+* **Flag for MyLockedPDF2.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF2.png"  alt="Flag for MyLockedPDF2.pdf">
   
-* **Flag for MyLockedPDF3.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF3.png" width="600" alt="Flag for MyLockedPDF3.pdf">
+* **Flag for MyLockedPDF3.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF3.png"  alt="Flag for MyLockedPDF3.pdf">
 
 
 **Finding:** The passwords `good-luck`, `password1`, and `1qaz2wsx` are a weak, common password that was recovered almost instantly by the cracking tool. This demonstrates the risk of using dictionary-based or predictable passwords.
