@@ -202,7 +202,7 @@ john --show hash1.txt
 
 | Module | Toolchain | Target File | Recovered Password | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **W3-PM1** | John the Ripper + Johnny (Local) | My Locked PDF1.pdf<br>My Locked PDF2.pdf<br>My Locked PDF3.pdf | `good-luck`<br>`password1`<br>`password1` | ✅ Cracked |
+| **W3-PM1** | John the Ripper + Johnny (Local) | My Locked PDF1.pdf<br>My Locked PDF2.pdf<br>My Locked PDF3.pdf | `good-luck`<br>`password1`<br>`1qaz2wsx` | ✅ Cracked |
 | **W3-PM2** | NetworkWalks Hash Calculator + Password Cracker (Web) | My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf | `password1` | ✅ Cracked |
 
 <!-- 
