@@ -66,8 +66,9 @@ This report documents the Week 3 practical exercises focused on **password crack
 
 **Proof of Work:**
 3.1 using an [online PDF hash extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php).
-- [Hash Calculator](screenshots/W3-PM1/1.ExtractHash-MyLockedPDF1.png)
-  
+- [Hash Calculator]()
+<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDF1.png" width="600" alt="Extract the Hash">
+
 3.2 using Kali-Linux Terminal:
 ```bash
 sudo apt install john -y
@@ -76,7 +77,7 @@ pdf2john "My Locked PDF1.pdf" > hash1.txt
 pdf2john "My Locked PDF2.pdf" > hash2.txt
 pdf2john "My Locked PDF3.pdf" > hash3.txt
 ```
-- [Hash Calculator](screenshots/W3-PM1/1.ExtractHash-MyLockedPDFs.png)
+<img src="screenshots/W3-PM1/1.ExtractHash-MyLockedPDFs.png" width="600" alt="Extract the Hashes">
 
 > Note: If your hash contains extra characters like b' in the start then make sure to remove those when saving in txt file (hash value should be in the format shown in above screenshot i.e. starting with `$pdf$`...).
 
@@ -95,7 +96,7 @@ john --show hash1.txt
 ```
 
 **Proof of Work:**
-- [Passwords Cracked](screenshots/W3-PM1/2.CrackHash-MyLockedPDFs.png)
+<img src="screenshots/W3-PM1/2.CrackHash-MyLockedPDFs.png" width="600" alt="Passwords Cracked">
 
 <br>
 5. **Successfully recovered the passwords for:**
@@ -107,17 +108,16 @@ john --show hash1.txt
 6.  Used the recovered password to open the protected PDF and verified access. The PDF contained a flag confirming successful cracking.
 
 **Proof of Work:**
-- [Flag for MyLockedPDF1.pdf](screenshots/W3-PM1/3.Flag-MyLockedPDF1.png)
-- [Flag for MyLockedPDF2.pdf](screenshots/W3-PM1/3.Flag-MyLockedPDF1.png)
-- [Flag for MyLockedPDF3.pdf](screenshots/W3-PM1/3.Flag-MyLockedPDF1.png)
+
+* **Flag for MyLockedPDF1.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF1.png" width="600" alt="Flag for MyLockedPDF1.pdf">
+
+* **Flag for MyLockedPDF2.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF2.png" width="600" alt="Flag for MyLockedPDF2.pdf">
   
+* **Flag for MyLockedPDF3.pdf** <img src="screenshots/W3-PM1/3.Flag-MyLockedPDF3.png" width="600" alt="Flag for MyLockedPDF3.pdf">
+
 
 **Finding:** The passwords `good-luck`, `password1`, and `1qaz2wsx` are a weak, common password that was recovered almost instantly by the cracking tool. This demonstrates the risk of using dictionary-based or predictable passwords.
 
-**Proof of Work:**
-- [Johnny Configuration](W3-PM1-JTR/screenshots/1-johnny-setup.png)
-- [Password Cracked](W3-PM1-JTR/screenshots/2-johnny-cracked.png)
-- [PDF Successfully Opened](W3-PM1-JTR/screenshots/3-pdf-opened.png)
 
 ---
 
